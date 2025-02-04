@@ -1,0 +1,210 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+header{
+    width: auto;
+    position:sticky;
+    top: 0;
+    display: flex;
+    background-color:rgb(252, 240, 224);
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo{
+    width: 200px;
+    display: flex;   
+    margin-left: 3%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.logo h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.923);
+}
+
+nav{
+    width: 300px;
+    display: flex;
+    margin-right: 5%;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.923);
+    padding: 10px 10px;
+}
+
+nav a:hover{
+    color: rgb(255, 115, 0);
+}
+
+.banner{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgb(252, 240, 224) , rgba(255, 115, 0, 0.457));
+    padding: 20px 20px;
+}
+
+.matrial{
+    display: flex;
+    flex-direction: column;
+    width:49%;   
+}
+
+.matrial h1{
+    font-size: 40px;
+}
+
+.matrial p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.matrial button{
+    height: 15%;
+    width: 25%;
+    min-width: 100px;
+    min-height: 50px;
+    font-size: 90%;
+    background: linear-gradient(rgb(246, 146, 65) , rgb(255, 115, 0));
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.matrial button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.banner-image{
+    width: 50%;
+}
+
+.banner-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.features-head{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.features-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.card img{
+    height: 50%;
+    width: 55%;
+    margin-bottom: 10px;
+}
+
+.card p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer{
+    width: auto;
+    margin-top: 50px;
+    display: flex;
+    background-color: rgba(231, 231, 231, 0.994);
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer-img{
+    padding: 10px;
+    width:30%;
+    height: 200px;
+}
+
+.footer-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-about{
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    padding: 30px;
+}
+
+.footer-about h1{
+    font-size: 150%;
+}
+
+.footer-about p{
+    font-size: 80%;
+    margin: 10px 0;
+}
+
+.footer-about li{
+    font-size: 80%;
+}
+
+li::marker{
+ color:rgb(255, 115, 0);
+}
+
+/*hamburgur */
+.menu{   
+    display: none;
+    height: 50%;   
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.menu img{
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 550px){
+    nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
